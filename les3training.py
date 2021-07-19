@@ -43,3 +43,33 @@ print(my_dict.values())
 list('hello')
 
 set([1,2,2,3,3,4,5,5,5,5,6])
+
+#Генератор списка - это выражение вида:
+vlans = [f'vlan {num}' for num in range(10,20)]
+print(vlans)
+#https://pyneng.readthedocs.io/ru/latest/book/08_python_basic_examples/x_comprehensions.html
+
+
+#В общем случае, это выражение, которое преобразует итерируемый объект в список.
+# То есть, последовательность элементов преобразуется и добавляется в новый список.
+
+#Выражению выше аналогичен такой цикл:
+vlans = []
+for num in range(7,11):
+    vlans.append(f'vlan {num}')
+print(vlans)
+
+#В list comprehensions можно использовать выражение if. Таким образом можно добавлять в список только некоторые объекты.
+#Например, такой цикл отбирает те элементы, которые являются числами, конвертирует их и добавляет в итоговый
+# список only_digits:
+
+items = ['10', '20', 'a', '30', 'b', '40', 'list_text']
+print(items)
+only_digits = []
+for item in items:
+      if item.isdigit():
+            only_digits.append(int(item))
+print(only_digits)
+
+
+
