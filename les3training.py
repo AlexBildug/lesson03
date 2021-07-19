@@ -71,5 +71,38 @@ for item in items:
             only_digits.append(int(item))
 print(only_digits)
 
+#x = 17 / 2 * 3 + 2
+x=17/2*3+2
+print(x)
+
+#x = 2 + 17 / 2 * 3
+x=2+(17/2*3)
+print(x)
+
+#x = 19 % 4 + 15 / 2 * 3
+x=19%4+15/2*3
+print(x)
+
+#x = (15 + 6) - 10 * 4
+x=(15+6)-10*4
+print
+
+#my_list=[1,2,3]
+#str(my_list)
+#print(my_list)
+
+#Создать список состоящий из отдельных единичных символов, преобразовать список в строку,
+# инвертировать строку и вывести на печать.
+#[1,2,3][::-1]
+my_list=[1,2,3]
+""join(map(str, my_list[::-1]))
+print(my_list)
+
+
+
+
+
+
+
 
 
