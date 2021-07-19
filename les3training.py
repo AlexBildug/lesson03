@@ -39,3 +39,7 @@ print(len(my_dict))
 #my_dict.keys() / my_dict.values() # получить список ключей / значений словаря
 print(my_dict.keys())
 print(my_dict.values())
+
+list('hello')
+
+set([1,2,2,3,3,4,5,5,5,5,6])
